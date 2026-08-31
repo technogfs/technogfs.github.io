@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
+@theme {
+    /* Brand colors */
+    --color-brand-red: #e53935;
+    --color-brand-orange: #f57c00;
+    --color-brand-yellow: #ffeb3b;
+    --color-brand-brown: #8d6e63;
+
+    /* Futuristic colors */
+    --color-futuristic-purple: #9c27b0;
+    --color-futuristic-cyan: #00bcd4;
+    --color-futuristic-teal: #009688;
+    --color-futuristic-gray: #2d3748;
+
+    /* Neutral colors */
+    --color-neutral-white: #ffffff;
+    --color-neutral-gray-50: #f8fafc;
+    --color-neutral-gray-100: #f7fafc;
+    --color-neutral-gray-200: #f4f4f5;
+    --color-neutral-gray-300: #e4e5e9;
+    --color-neutral-gray-400: #d6d8db;
+    --color-neutral-gray-800: #2d3748;
+    --color-neutral-gray-900: #2d3748;
+
+    /* Typography */
+    --font-sans: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "Segoe UI",
+    sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
 }
