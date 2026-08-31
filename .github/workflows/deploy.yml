@@ -1,4 +1,4 @@
-name: Deploy TechnoGFS to GitHub Pages
+name: Deploy TechnoGFS
 
 on:
   push:
@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: github-pages
   cancel-in-progress: false
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Upload static site
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
